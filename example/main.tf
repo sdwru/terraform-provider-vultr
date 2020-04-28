@@ -15,7 +15,7 @@ resource "vultr_server" "my_server" {
   notify_activate = false
   ddos_protection = true
   tag = "tag"
-  firewall_group_id = "${vultr_firewall_group.fwg.id}}"
+  firewall_group_id = "${vultr_firewall_group.fwg.id}"
 }
 
 resource "vultr_firewall_group" "fwg" {
